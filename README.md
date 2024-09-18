@@ -1,4 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Chat Application
+
+This is an AI-powered chat application that allows users to interact with an intelligent assistant. The app provides a user-friendly interface for engaging in conversations, asking questions, and receiving helpful responses.
+
+## Purpose
+
+The main purpose of this application is to:
+- Provide users with an accessible AI chat interface
+- Offer intelligent responses to user queries
+- Demonstrate the capabilities of AI in natural language processing
+
+## Tech Stack
+
+This project is built using the following technologies:
+
+- [Next.js](https://nextjs.org) - React framework for building web applications
+- [React](https://reactjs.org) - JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org) - Typed superset of JavaScript
+- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
+- [Vercel AI SDK](https://sdk.vercel.ai/docs) - Tools for building AI-powered applications
+- [OpenAI API](https://openai.com/api/) - AI language model for generating responses
 
 ## Getting Started
 
