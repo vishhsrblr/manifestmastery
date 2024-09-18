@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea"
 import { Upload, ExternalLink } from 'lucide-react'
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import Image from 'next/image';
 
 const careerGoals = [
   "Get promotions/Raise",
@@ -158,7 +159,7 @@ export default function ManifestMasteryApp() {
             <p className="text-center text-gray-600" style={{ fontFamily: 'Quicksand, sans-serif' }}>Start Your Manifestation Journey Today!</p>
             <div className="flex justify-center">
               {logo ? (
-                <img src={logo} alt="Logo" className="w-24 h-24 object-contain" />
+                <Image src={logo} alt="Logo" className="w-24 h-24 object-contain" width={96} height={96} />
               ) : (
                 <label htmlFor="logo-upload" className="cursor-pointer">
                   <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center">
@@ -392,7 +393,7 @@ export default function ManifestMasteryApp() {
                     onChange={(e) => handleVisionBoardUpload(goal, e)}
                   />
                   {visionBoard[goal] && (
-                    <img src={visionBoard[goal]} alt={goal} className="w-full h-40 object-cover rounded-md" />
+                    <Image src={visionBoard[goal]} alt={goal} className="w-full h-40 object-cover rounded-md" width={320} height={160} />
                   )}
                 </div>
                 <div className="space-y-2">
@@ -444,7 +445,7 @@ export default function ManifestMasteryApp() {
                 <div key={index} className="space-y-4 border p-4 rounded-md">
                   <h3 className="text-xl font-semibold">{goal}</h3>
                   {visionBoard[goal] && (
-                    <img src={visionBoard[goal]} alt={goal} className="w-full h-40 object-cover rounded-md" />
+                    <Image src={visionBoard[goal]} alt={goal} className="w-full h-40 object-cover rounded-md" width={320} height={160} />
                   )}
                   <div>
                     <h4 className="font-medium">Career Goal Statement</h4>
